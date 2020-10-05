@@ -46,3 +46,6 @@ gem 'middleman-cli', path: 'middleman-cli'
 gem 'middleman-core', path: 'middleman-core'
 
 # gem 'middleman-sprockets', github: 'middleman/middleman-sprockets', require: false
+
+# Remove when there is a release with https://github.com/guard/listen/pull/490
+gem 'listen', github: 'guard/listen'

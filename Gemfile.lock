@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/guard/listen.git
+  revision: 86e06aeb0878dcd46fd635d620656748255d3f67
+  specs:
+    listen (3.2.1)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
+
 PATH
   remote: middleman-cli
   specs:
@@ -56,7 +64,7 @@ GEM
       timers (~> 4.1)
     async-dns (1.2.5)
       async-io (~> 1.15)
-    async-io (1.30.0)
+    async-io (1.30.1)
       async (~> 1.14)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
@@ -118,6 +126,7 @@ GEM
     execjs (2.7.0)
     fastimage (2.2.0)
     ffi (1.13.1)
+    ffi (1.13.1-java)
     haml (5.2.0)
       temple (>= 0.8.0)
       tilt
@@ -132,9 +141,6 @@ GEM
     lazy_priority_queue (0.1.1)
     libv8 (8.4.255.0)
     liquid (4.0.3)
-    listen (3.2.1)
-      rb-fsevent (~> 0.10, >= 0.10.3)
-      rb-inotify (~> 0.9, >= 0.9.10)
     memoist (0.16.2)
     method_source (1.0.0)
     middleware (0.1.0)
@@ -146,9 +152,11 @@ GEM
     multi_test (0.1.2)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
-    nio4r (2.5.2)
+    nio4r (2.5.4)
+    nio4r (2.5.4-java)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.10-java)
     oj (3.10.8)
     padrino-helpers (0.14.4)
       i18n (~> 0.6, >= 0.6.7)
@@ -166,6 +174,10 @@ GEM
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    pry (0.13.1-java)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+      spoon (~> 0.0)
     pry-rescue (1.5.2)
       interception (>= 0.5)
       pry (>= 0.12.0)
@@ -226,7 +238,7 @@ GEM
     simplecov (0.19.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
-    simplecov-html (0.12.2)
+    simplecov-html (0.12.3)
     sinatra (2.1.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
@@ -235,14 +247,20 @@ GEM
     slim (4.1.0)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 2.0.6, < 2.1)
+    spoon (0.0.6)
+      ffi
     stream (0.5.2)
     sys-uname (1.2.1)
       ffi (>= 1.0.0)
     temple (0.8.2)
+    therubyrhino (2.1.2)
+      therubyrhino_jar (>= 1.7.4, < 1.7.9)
+    therubyrhino_jar (1.7.8)
     thor (1.0.1)
     thread_safe (0.3.6)
+    thread_safe (0.3.6-java)
     tilt (2.0.10)
-    timers (4.3.0)
+    timers (4.3.2)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
     uglifier (4.2.0)
@@ -254,6 +272,7 @@ GEM
     zeitwerk (2.4.0)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
@@ -266,6 +285,7 @@ DEPENDENCIES
   haml (>= 4.0.5)
   kramdown (~> 2.3)
   liquid (>= 3.0)
+  listen!
   middleman-cli!
   middleman-core!
   mini_racer (~> 0.3.1)
